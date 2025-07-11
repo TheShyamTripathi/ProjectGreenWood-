@@ -372,13 +372,13 @@ export default function ReportPage() {
             <tbody className="divide-y divide-black-200">
               {reports.map((report) => (
                 <tr key={report.id} className="hover:bg-gray-50 transition-colors duration-200">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-black-500">
-                    <MapPin className="inline-block w-4 h-4 mr-2 text-blue-500" />
+                  <td className="px-6 py-4 whitespace-nowrap text-sm !text-black">
+                    <MapPin className="inline-block w-4 h-4 mr-2 !text-black" />
                     {report.location}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-black-500">{report.wasteType}</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-black-500">{report.amount}</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-black-500">{report.createdAt}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm !text-black">{report.wasteType}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm !text-black">{report.amount}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm !text-black">{report.createdAt}</td>
                 </tr>
               ))}
             </tbody>
